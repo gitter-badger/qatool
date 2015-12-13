@@ -23,6 +23,16 @@ module.exports = function(app) {
         });
     });
 
+    //Temporary routing to adminLTE index page
+
+    app.get('/adminlteindex', function(req, res) {
+        res.sendfile('./public/adminLTEIndex.html');
+    });
+
+    app.get('/login', function(req, res) {
+        res.sendfile('./public/login.html');
+    });
+
     // route to handle creating goes here (app.post)
     // route to handle delete goes here (app.delete)
 
